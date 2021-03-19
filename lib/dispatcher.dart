@@ -158,7 +158,7 @@ class Feed {
   /// The [callback] will be called whenever a new [FeedItem] is added to this feed.
   /// The [subscriberName] is used to allow unsubscribing from the feed later -> to stop receiving updates
   ///
-  /// Returns the Dispatcher instance to allow chained method calls.
+  /// Returns this [Feed] instance allow chained method calls.
   /// ---
   /// ```
   /// Dispatcher().subscribeTo('myIntegerFeed', 'testSubscriber', (feedItem) {
@@ -171,6 +171,9 @@ class Feed {
     return this;
   }
 
+  /// Allows you to stop receiving updates when new [FeedItem]s are added to this feed.
+  ///
+  /// Returns this [Feed] instance allow chained method calls.
   Feed unsubscribe(String subscriber) {
     _listeners.remove(subscriber);
     return this;
