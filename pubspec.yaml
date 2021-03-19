@@ -1,6 +1,6 @@
 name: dispatcher
-description: A new Flutter package.
-version: 0.0.1
+description: The Dispatcher allows you to easily publish data and notify multiple listeners at once.
+version: 0.0.2
 homepage: https://github.com/AlexBolot/dispatcher
 
 environment:
